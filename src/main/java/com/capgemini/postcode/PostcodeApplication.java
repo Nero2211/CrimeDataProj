@@ -33,12 +33,12 @@ public class PostcodeApplication {
 	}
 
 	@GetMapping("/hello")
-	public String hello(@RequestParam(value = "name", defaultValue = "Worssld") String name) {
+	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return String.format("Hello %s!", name);
 	}
 
 	@GetMapping("/crimes")
-    public ResponseEntity<String> getCrimeDataForPostCode(@RequestParam(value = "postcode") String postcode, @RequestParam(value = "date") String date){
+    public ResponseEntity<Object> getCrimeDataForPostCode(@RequestParam(value = "postcode") String postcode, @RequestParam(value = "date") String date){
 		List<CrimeRoot> crimeDetails;
 
 		try {

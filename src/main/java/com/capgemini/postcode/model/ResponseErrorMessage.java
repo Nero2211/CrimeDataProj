@@ -25,4 +25,12 @@ public class ResponseErrorMessage {
     public void setMessage(String message) {
         this.message = message;
     }
+
+    @Override
+    public String toString() {
+        return "ResponseErrorMessage{" +
+                "errorCode='" + errorCode + '\'' +
+                ", message='" + message + '\'' +
+                '}';
+    }
 }

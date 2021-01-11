@@ -12,6 +12,16 @@ public class CrimeRoot {
     private String location_subtype;
     private String month;
 
+    public CrimeRoot() {
+    }
+
+    public CrimeRoot(String category, String location_type, int id, String month) {
+        this.category = category;
+        this.location_type = location_type;
+        this.id = id;
+        this.month = month;
+    }
+
     public String getCategory() {
         return category;
     }
